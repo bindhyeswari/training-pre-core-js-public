@@ -1,0 +1,13 @@
+{
+  "name": "training-krithika-git-public",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:bindhyeswari/training-krithika-git-public.git",
+  "author": "BP Mishra <bindhyeswari.mishra@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "mkdocs serve",
+    "deploy": "mkdocs gh-deploy",
+    "commit": "git add . && git commit -m 'intermediate' && git push origin master"
+  }
+}
