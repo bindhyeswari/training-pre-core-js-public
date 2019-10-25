@@ -1,7 +1,6 @@
 site_name: Git Training (Krithika)
 nav:
 - Home Page: index.md
-- Vi Editor: working-with-vi.md
 theme:
   name:
     material
