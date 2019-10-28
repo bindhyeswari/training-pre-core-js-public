@@ -39,7 +39,17 @@ console.log('Hello World');
 
 ## Practicing with Strings, Arrays and Numbers
 
+ - Practice `non-deprecated` (watch out for the thumbs down sign) , relevant prototype methods only. 
+ - Methods will be under <Entity>.prototype.<method name> where Entity is String | Number | Array. e.g.
+```js
+// slice is a method available under String.prototype.slice and can be used as:
+const str = 'John Doe';
+console.log(str.slice(0, 3));
+``` 
  - Strings: [Reference MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/prototype)
  - Numbers: [Number MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/prototype)
  - Arrays: [Array Prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype)
+ - Practice examples, and gain an understanding about the utility methods. 
+ - Store the examples that **you type** in .js files within a repository. You should push the same repository to github and share the link.
+ - The entire exercise will take you 7 hours overall. Again, **type out the code**. Reading it will not be enough. 
  
