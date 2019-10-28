@@ -36,4 +36,10 @@ console.log('Hello World');
 - Click on the **Chrome** browser on that link.
 - Then, open the **Chrome Dev Tools** using `Ctrl Shift J` (on Windows) or `Ctrl Option J` (on Mac);
 - Click on the `Console` tab and you should see the "Hello World". 
+
+## Practicing with Strings, Arrays and Numbers
+
+ - Strings: [Reference MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/prototype)
+ - Numbers: [Number MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/prototype)
+ - Arrays: [Array Prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype)
  
