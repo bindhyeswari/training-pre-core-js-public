@@ -31,21 +31,21 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="/assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
     
     
       
-        <title>Pre Core JS</title>
+        <title>SAN Examples - Pre Core JS</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/application.3020aac5.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.3020aac5.css">
       
       
     
     
-      <script src="/assets/javascripts/modernizr.01ccdecf.js"></script>
+      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
     
     
       
@@ -54,7 +54,7 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="/assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
     
     
@@ -75,12 +75,16 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#san-examples" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="/." title="Pre Core JS" class="md-header-nav__button md-logo">
+        <a href=".." title="Pre Core JS" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -96,7 +100,7 @@
               Pre Core JS
             </span>
             <span class="md-header-nav__topic">
-              
+              SAN Examples
             </span>
           
         </div>
@@ -148,7 +152,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="/." title="Pre Core JS" class="md-nav__button md-logo">
+    <a href=".." title="Pre Core JS" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
@@ -164,7 +168,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/." title="Home Page" class="md-nav__link">
+    <a href=".." title="Home Page" class="md-nav__link">
       Home Page
     </a>
   </li>
@@ -177,12 +181,58 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
+                
+                
+                <h1 id="san-examples">SAN Examples</h1>
+<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;info&#39;</span><span class="p">,</span> <span class="s1">&#39;meta&#39;</span><span class="p">,</span> <span class="s1">&#39;check&#39;</span><span class="p">,</span> <span class="s1">&#39;mets&#39;</span><span class="p">];</span>
 
+<span class="c1">// Context and this</span>
+
+<span class="c1">// Fat arrow function pick up the local context outside the function</span>
+
+<span class="c1">// predicate function args -&gt; boolean</span>
+
+<span class="c1">// Change this to a function object and see what happens</span>
+<span class="kr">const</span> <span class="nx">predicate</span>  <span class="o">=</span> <span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">arr</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="c1">// console.log(index);</span>
+  <span class="c1">// console.log(arr);</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">str</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s1">&#39;me&#39;</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="kr">const</span> <span class="nx">predicateFatArrow</span> <span class="o">=</span> <span class="nx">str</span> <span class="p">=&gt;</span> <span class="nx">str</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s1">&#39;me&#39;</span><span class="p">);</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">predicate</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Mahantesh&#39;</span>
+<span class="p">}));</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">findIndex</span><span class="p">(</span><span class="nx">predicateFatArrow</span><span class="p">));</span>
+
+<span class="c1">// console.log(data.find(&#39;meta&#39;)); // will throw error</span>
+</pre></div>
+                
+                  
+                
+              
               
                 
 
@@ -213,9 +263,9 @@
       
     </div>
     
-      <script src="/assets/javascripts/application.dc02f8ce.js"></script>
+      <script src="../assets/javascripts/application.dc02f8ce.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"/"}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
   </body>
