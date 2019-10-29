@@ -8,6 +8,7 @@
   "scripts": {
     "start": "mkdocs serve",
     "deploy": "mkdocs gh-deploy",
-    "commit": "git add . && git commit -m 'intermediate' && git push origin master"
+    "commit": "git add . && git commit -m 'intermediate' && git push origin master",
+    "test": "node ./docs/index.js"
   }
 }
