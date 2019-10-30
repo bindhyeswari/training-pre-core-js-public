@@ -51,5 +51,6 @@ console.log(str.slice(0, 3));
  - Arrays: [Array Prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype)
  - Practice examples, and gain an understanding about the utility methods. 
  - Store the examples that **you type** in .js files within a repository. You should push the same repository to github and share the link.
- - The entire exercise will take you 7 hours overall. Again, **type out the code**. Reading it will not be enough. 
+ - The entire exercise will take you 7 hours overall. Again, **type out the code**. Reading it will not be enough.
+ - More references [Go here](002-basics.md) 
  
